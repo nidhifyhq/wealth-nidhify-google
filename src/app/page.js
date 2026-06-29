@@ -20,7 +20,7 @@ export default function HomePage() {
         <WhyNidhify />
         <Screenshots />
         {/* <Testimonials /> */}
-        <CTA />
+        {/* <CTA /> */}
         <BlogPreview />
       </main>
       <Footer />

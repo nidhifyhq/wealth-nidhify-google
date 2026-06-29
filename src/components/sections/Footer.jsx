@@ -1,30 +1,27 @@
 "use client";
 
 import Image from "next/image";
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import Link from "next/link";
 
 const companyLinks = [
-  { label: "About Us", href: "#" },
-  { label: "Careers", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const resourceLinks = [
-  { label: "Blog", href: "#" },
-  { label: "FAQs", href: "#" },
-  { label: "Help Center", href: "#" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms & Conditions", href: "#" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms" },
+  { label: "Disclaimer", href: "/disclaimer" },
 ];
 
 const productLinks = [
-  { label: "Features", href: "#" },
-  { label: "Download App", href: "#" },
-  { label: "Sign Up", href: "#" },
+  { label: "Login", href: "https://wealth.nidhify.com/" },
+  { label: "Sign Up", href: "https://wealth.nidhify.com/" },
 ];
 
 const footerLinks = [
@@ -54,7 +51,7 @@ export default function Footer() {
               Simplifying Wealth Management for Every Investor.
             </p>
             <div className="flex items-center gap-4 mt-6">
-              <Link
+              {/* <Link
                 href="#"
                 className="w-9 h-9 rounded-full bg-white/[0.06] flex items-center justify-center text-white/50 hover:bg-white/[0.12] hover:text-white transition-all"
               >
@@ -65,9 +62,9 @@ export default function Footer() {
                 className="w-9 h-9 rounded-full bg-white/[0.06] flex items-center justify-center text-white/50 hover:bg-white/[0.12] hover:text-white transition-all"
               >
                 <Twitter className="w-4 h-4" />
-              </Link>
+              </Link> */}
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/nidhify/"
                 className="w-9 h-9 rounded-full bg-white/[0.06] flex items-center justify-center text-white/50 hover:bg-white/[0.12] hover:text-white transition-all"
               >
                 <Linkedin className="w-4 h-4" />
