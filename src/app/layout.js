@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import './globals.css';
 
 const inter = Inter({
@@ -99,6 +100,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased" suppressHydrationWarning>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
