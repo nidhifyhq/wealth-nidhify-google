@@ -5,6 +5,9 @@ export const metadata = {
   title: "Privacy Policy",
   description:
     "Privacy Policy for Nidhify wealth management platform. Learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: 'https://nidhify.com/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {

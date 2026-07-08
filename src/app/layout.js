@@ -28,6 +28,10 @@ export const metadata = {
   creator: 'Nidhify',
   publisher: 'Nidhify',
   metadataBase: new URL('https://nidhify.com'),
+  alternates: {
+    canonical: 'https://nidhify.com',
+  },
+  manifest: '/manifest.json',
   openGraph: {
     type: 'website',
     locale: 'en_IN',
@@ -75,6 +79,40 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/logo192px.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/logo192px.png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'Nidhify',
+              url: 'https://nidhify.com',
+              description:
+                'Track your entire wealth in one place. Mutual funds, stocks, FDs, insurance, and goals.',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: {
+                  '@type': 'EntryPoint',
+                  urlTemplate: 'https://nidhify.com/search?q={search_term_string}',
+                },
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Nidhify',
+              url: 'https://nidhify.com',
+              logo: 'https://nidhify.com/logo192px.png',
+              sameAs: [],
+            }),
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

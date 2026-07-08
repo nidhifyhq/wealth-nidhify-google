@@ -5,6 +5,9 @@ export const metadata = {
   title: "Terms of Service",
   description:
     "Terms of Service for using Nidhify wealth management platform. Please read these terms carefully before using our services.",
+  alternates: {
+    canonical: 'https://nidhify.com/terms',
+  },
 };
 
 export default function TermsPage() {

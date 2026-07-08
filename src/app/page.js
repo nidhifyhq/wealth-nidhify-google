@@ -9,6 +9,12 @@ import CTA from '@/components/sections/CTA';
 import BlogPreview from '@/components/sections/BlogPreview';
 import Footer from '@/components/sections/Footer';
 
+export const metadata = {
+  alternates: {
+    canonical: 'https://nidhify.com',
+  },
+};
+
 export default function HomePage() {
   return (
     <>

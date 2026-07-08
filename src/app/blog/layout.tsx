@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Blog',
+  description:
+    'Stay informed with the latest articles on wealth management, investing strategies, and personal finance tips for Indian investors.',
+  alternates: {
+    canonical: 'https://nidhify.com/blog',
+  },
+};
+
 export default function BlogLayout({
   children,
 }: {

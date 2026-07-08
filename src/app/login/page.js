@@ -4,6 +4,9 @@ import { TrendingUp } from 'lucide-react';
 export const metadata = {
   title: 'Login',
   description: 'Log in to your Nidhify account to manage your wealth and track your investments.',
+  alternates: {
+    canonical: 'https://nidhify.com/login',
+  },
 };
 
 export default function LoginPage() {

@@ -1,0 +1,17 @@
+{
+  "name": "Nidhify — Track Your Entire Wealth in One Place",
+  "short_name": "Nidhify",
+  "description": "Smart personal wealth management platform for Indian investors. Track mutual funds, stocks, FDs, insurance, and goals.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F2A47",
+  "theme_color": "#F59E0B",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo192px.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

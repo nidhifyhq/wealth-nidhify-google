@@ -5,6 +5,9 @@ export const metadata = {
   title: 'Sign Up',
   description:
     'Create your Nidhify account and start tracking your wealth with India\'s smartest personal finance platform.',
+  alternates: {
+    canonical: 'https://nidhify.com/signup',
+  },
 };
 
 const benefits = [

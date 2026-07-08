@@ -5,6 +5,9 @@ export const metadata = {
   title: "About Us",
   description:
     "Learn about Nidhify — the smart personal wealth management platform helping Indian investors track and grow their wealth.",
+  alternates: {
+    canonical: 'https://nidhify.com/about',
+  },
 };
 
 export default function AboutPage() {

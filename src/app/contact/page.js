@@ -5,6 +5,9 @@ export const metadata = {
   title: "Contact Us",
   description:
     "Get in touch with the Nidhify team. We are here to help you with any questions about our wealth management platform.",
+  alternates: {
+    canonical: 'https://nidhify.com/contact',
+  },
 };
 
 export default function ContactPage() {

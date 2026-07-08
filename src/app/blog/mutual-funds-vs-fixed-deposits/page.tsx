@@ -21,14 +21,36 @@ export const metadata = {
     images: ['/og-image.png'],
   },
   keywords: ['mutual fund vs fixed deposit', 'fd vs mutual fund', 'difference between mutual fund and fd', 'investment options in India'],
+  alternates: {
+    canonical: 'https://nidhify.com/blog/mutual-funds-vs-fixed-deposits',
+  },
   robots: { index: true, follow: true },
 };
 
 export default function Page() {
   const post = blogPosts.find((p) => p.slug === "mutual-funds-vs-fixed-deposits");
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    author: { '@type': 'Organization', name: 'Nidhify' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Nidhify',
+      logo: { '@type': 'ImageObject', url: 'https://nidhify.com/logo192px.png' },
+    },
+    datePublished: '2026-06-29',
+    dateModified: '2026-06-29',
+    image: 'https://nidhify.com/og-image.png',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://nidhify.com/blog/mutual-funds-vs-fixed-deposits' },
+  };
+
   return (
-    <BlogLayout
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <BlogLayout
       title={post.title}
       description={post.description}
       category={post.category}
@@ -291,5 +313,6 @@ export default function Page() {
         </div>
       </section>
     </BlogLayout>
+    </>
   );
 }

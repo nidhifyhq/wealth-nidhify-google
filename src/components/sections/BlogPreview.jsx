@@ -3,47 +3,26 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { blogPosts } from "@/lib/blog-posts";
 
-const posts = [
-  {
-    category: "Investing",
-    badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
-    title: "Beginner's Guide to Mutual Funds",
-    excerpt:
-      "Learn the fundamentals of mutual funds and how to start your investment journey with confidence.",
-    author: "Rahul Mehta",
-    date: "Mar 15, 2026",
-  },
-  {
-    category: "SIP",
-    badgeColor: "bg-emerald-100 text-emerald-700 border-emerald-200",
-    title: "How to Build Wealth with SIPs",
-    excerpt:
-      "Discover the power of systematic investment plans and how they can help you create long-term wealth.",
-    author: "Priya Sharma",
-    date: "Mar 10, 2026",
-  },
-  {
-    category: "Planning",
-    badgeColor: "bg-violet-100 text-violet-700 border-violet-200",
-    title: "Understanding Asset Allocation",
-    excerpt:
-      "Master the art of distributing your investments across different asset classes for optimal returns.",
-    author: "Amit Verma",
-    date: "Mar 5, 2026",
-  },
-  {
-    category: "Finance",
-    badgeColor: "bg-amber-100 text-amber-700 border-amber-200",
-    title: "Investment Planning for Young Professionals",
-    excerpt:
-      "A comprehensive guide to building a solid financial foundation in your early career years.",
-    author: "Neha Kapoor",
-    date: "Feb 28, 2026",
-  },
-];
+const categoryColors = {
+  "Mutual Funds": "bg-blue-100 text-blue-700 border-blue-200",
+  "Fixed Deposits": "bg-emerald-100 text-emerald-700 border-emerald-200",
+  "Investment Tracking": "bg-violet-100 text-violet-700 border-violet-200",
+  Comparison: "bg-amber-100 text-amber-700 border-amber-200",
+};
+
+const posts = blogPosts
+  .slice()
+  .reverse()
+  .slice(0, 4)
+  .map((post) => ({
+    ...post,
+    excerpt: post.description,
+    badgeColor:
+      categoryColors[post.category] || "bg-gray-100 text-gray-700 border-gray-200",
+  }));
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -90,7 +69,7 @@ export default function BlogPreview() {
         >
           {posts.map((post) => (
             <motion.div
-              key={post.title}
+              key={post.slug}
               variants={cardVariants}
               className="group bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
@@ -116,7 +95,7 @@ export default function BlogPreview() {
                     {post.author}
                   </span>
                   <Link
-                    href="#"
+                    href={"/blog/" + post.slug}
                     className="inline-flex items-center gap-1 text-xs font-semibold text-accent hover:text-accent/80 transition-colors"
                   >
                     Read More
@@ -135,13 +114,13 @@ export default function BlogPreview() {
           transition={{ duration: 0.5, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
           className="text-center mt-12"
         >
-          <Button
-            variant="outline"
-            className="px-7 py-5 text-base h-auto"
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 px-7 py-3 text-base font-medium rounded-xl border border-gray-200 bg-white text-primary hover:bg-gray-50 hover:border-gray-300 transition-all"
           >
             View All Articles
             <ArrowRight className="w-4 h-4" />
-          </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

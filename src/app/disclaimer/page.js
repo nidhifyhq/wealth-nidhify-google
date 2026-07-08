@@ -5,6 +5,9 @@ export const metadata = {
   title: "Disclaimer",
   description:
     "Read the full disclaimer for Nidhify. Nidhify is a software utility tool and does not provide financial, investment, or tax advice.",
+  alternates: {
+    canonical: 'https://nidhify.com/disclaimer',
+  },
 };
 
 export default function DisclaimerPage() {

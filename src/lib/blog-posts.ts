@@ -39,4 +39,14 @@ export const blogPosts: BlogPost[] = [
     author: "Nidhify Wealth Team",
     readingTime: "6 min read",
   },
+  {
+    slug: "why-track-all-investments",
+    title: "Why Every Indian Should Track All Investments in One Place (Complete Guide for 2026)",
+    description:
+      "Track mutual funds, fixed deposits, digital gold, insurance, and more in one place. Learn why an investment tracker can simplify your finances and help you stay organized.",
+    category: "Investment Tracking",
+    date: "July 8, 2026",
+    author: "Nidhify Wealth Team",
+    readingTime: "7 min read",
+  },
 ];
