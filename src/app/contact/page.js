@@ -41,13 +41,10 @@ export default function ContactPage() {
 
       <main className="pt-16">
         <section className="py-20 md:py-28">
-          <div className="container max-w-3xl">
-            <h1 className="mb-6 text-4xl font-bold text-primary">Contact Us</h1>
+          <div className="container max-w-3xl mx-auto px-4">
+            <h1 className="text-4xl font-bold text-primary mb-6">Contact Us</h1>
             <p className="mb-10 text-lg leading-relaxed text-gray-600">
-              Have a question about your portfolio dashboard, a feature
-              suggestion, or need help with your CAS PDF import? We are here to
-              help you out. At Nidhify, we prioritize your data privacy and
-              security.
+              Have a question about your asset dashboard, a feature suggestion for our planning modules, or need help with your CAS PDF automated sync? We are here to help you out. At Nidhify, data isolation, user privacy, and pure software engineering are our core values.
             </p>
 
             {/* Email Support Section */}
@@ -61,8 +58,7 @@ export default function ContactPage() {
                 </h2>
               </div>
               <p className="mb-4 text-sm leading-relaxed text-gray-500">
-                For account support, technical issues, or general inquiries, drop
-                us a line at our official helpdesk:
+                For account dashboard support, performance optimization bug reporting, or general compliance inquiries, reach out directly to our helpdesk via:
               </p>
               <div className="mb-3 rounded-lg bg-gray-50 px-4 py-3">
                 <span className="text-sm font-medium text-gray-500">
@@ -70,17 +66,15 @@ export default function ContactPage() {
                 </span>
                 <a
                   href="mailto:nidhifyhq@gmail.com"
-                  className="text-sm font-semibold text-accent hover:underline"
+                  className="text-sm font-semibold text-secondary hover:underline"
                 >
                   nidhifyhq@gmail.com
                 </a>
               </div>
               <div className="flex items-start gap-2 text-sm text-gray-500">
-                <Clock size={14} className="mt-0.5 shrink-0" />
+                <Clock size={14} className="mt-0.5 shrink-0 text-gray-400" />
                 <span>
-                  <strong>Expected Response Time:</strong> We do our best to
-                  review all inquiries and respond within 24 to 48 hours (Monday
-                  to Friday).
+                  <strong>Expected Response Time:</strong> As an independent software utility, we review tracking queries diligently and aim to respond within 24 to 48 hours.
                 </span>
               </div>
             </div>
@@ -96,8 +90,7 @@ export default function ContactPage() {
                 </h2>
               </div>
               <p className="mb-4 text-sm leading-relaxed text-amber-700">
-                To protect your personal wealth data, please keep the following
-                security practices in mind when reaching out to support:
+                To protect your financial records, please ensure you adhere strictly to the following parameters when corresponding with support:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2 text-sm text-amber-700">
@@ -106,9 +99,7 @@ export default function ContactPage() {
                     className="mt-0.5 shrink-0 text-amber-500"
                   />
                   <span>
-                    <strong>Never share your login passwords:</strong> Nidhify
-                    support team members will never ask you for your account
-                    password or your CAS PDF password.
+                    <strong>Never reveal structural passwords:</strong> Nidhify support operators will absolute zero percent of the time ask for your account password or your master CAS statement decryption password.
                   </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-amber-700">
@@ -117,11 +108,7 @@ export default function ContactPage() {
                     className="mt-0.5 shrink-0 text-amber-500"
                   />
                   <span>
-                    <strong>Do not attach raw financial files:</strong> If you
-                    are experiencing a parsing bug with your CAS statement,
-                    please do not email us the raw, password-protected PDF.
-                    Instead, describe the error message or send a screenshot with
-                    your sensitive personal details blacked out.
+                    <strong>Do not attach raw financial files:</strong> If you run into parsing layout mismatch exceptions, do not email the raw PDF statement file. Instead, share a screenshot with your sensitive personal identification elements completely blacked out.
                   </span>
                 </li>
               </ul>
@@ -134,26 +121,31 @@ export default function ContactPage() {
                   <HelpCircle size={18} />
                 </div>
                 <h2 className="text-lg font-semibold text-primary">
-                  Quick Troubleshooting
+                  Quick Troubleshooting Core
                 </h2>
               </div>
               <div className="mb-4">
                 <h3 className="mb-1 text-sm font-semibold text-primary">
-                  CAS Upload Errors:
+                  CAS Upload Parsing Blocks:
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-500">
-                  Ensure you are entering the exact password you created on the
-                  CAMS portal when downloading the statement.
+                  Verify that your document is a legitimate Consolidated Account Statement layout downloaded from CAMS Online or KFintech, and that the text casing match mirrors your unlock key accurately.
+                </p>
+              </div>
+              <div className="mb-4">
+                <h3 className="mb-1 text-sm font-semibold text-primary">
+                  FD/RD & Asset Valuation Variance:
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-500">
+                  Calculated growth outputs rely on specific compound formulas and directional market endpoints. Discrepancies may emerge from third-party lag parameters or input timing errors.
                 </p>
               </div>
               <div>
                 <h3 className="mb-1 text-sm font-semibold text-primary">
-                  Data Lag:
+                  Budget and Salary Sync:
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-500">
-                  Remember that third-party mutual fund data and bank updates can
-                  experience slight sync delays. Try refreshing after a short
-                  while.
+                  Data mutation updates instantly locally. If your custom layout parameters fail to compute, clear your local computational session cache and refresh the dashboard view.
                 </p>
               </div>
             </div>
