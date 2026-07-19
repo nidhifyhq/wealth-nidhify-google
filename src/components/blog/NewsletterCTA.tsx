@@ -17,7 +17,7 @@ export default function NewsletterCTA() {
           <Download className="w-4 h-4" />
           Download the App
         </Button>
-        <Link href="/signup">
+        <Link href="/">
           <Button
             variant="outline"
             className="border-white/30 text-white hover:bg-white/10 hover:text-white px-6 h-11 text-base"
