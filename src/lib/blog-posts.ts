@@ -49,4 +49,14 @@ export const blogPosts: BlogPost[] = [
     author: "Nidhify Wealth Team",
     readingTime: "7 min read",
   },
+  {
+    slug: "what-are-smart-ways-to-save-money-on-groceries",
+    title: "What Are Smart Ways to Save Money on Groceries? 21 Practical Tips (2026)",
+    description:
+      "Discover 21 smart ways to save money on groceries with practical budgeting tips. Learn how to reduce grocery expenses, avoid overspending, and stick to your monthly food budget.",
+    category: "Budgeting",
+    date: "July 19, 2026",
+    author: "Nidhify Wealth Team",
+    readingTime: "10 min read",
+  },
 ];

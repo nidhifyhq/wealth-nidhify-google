@@ -5,6 +5,7 @@ const blogPosts = [
   { slug: 'fixed-deposits-explained', lastModified: '2026-06-29' },
   { slug: 'mutual-funds-vs-fixed-deposits', lastModified: '2026-06-29' },
   { slug: 'why-track-all-investments', lastModified: '2026-07-08' },
+  { slug: 'what-are-smart-ways-to-save-money-on-groceries', lastModified: '2026-07-19' },
 ];
 
 export default function sitemap() {

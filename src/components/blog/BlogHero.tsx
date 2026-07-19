@@ -29,7 +29,7 @@ export default function BlogHero({
 }: BlogHeroProps) {
   return (
     <section className="pt-12 md:pt-16 pb-8 md:pb-10">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto px-4">
         <Badge variant="secondary" className="mb-5">
           {category}
         </Badge>
