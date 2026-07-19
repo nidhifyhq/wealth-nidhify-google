@@ -40,10 +40,10 @@ export default function Header() {
     };
   }, [mobileOpen]);
 
-  const handleNavClick = (e, section) => {
-    if (pathname === "/" && section) {
+  const handleNavClick = (e, link) => {
+    if (pathname === "/" && link.section && link.href.startsWith("/#")) {
       e.preventDefault();
-      const el = document.getElementById(section);
+      const el = document.getElementById(link.section);
       if (el) el.scrollIntoView({ behavior: "smooth" });
     }
     setMobileOpen(false);
@@ -75,7 +75,7 @@ export default function Header() {
             <Link
               key={link.label}
               href={link.href}
-              onClick={(e) => handleNavClick(e, link.section)}
+              onClick={(e) => handleNavClick(e, link)}
               className="text-sm font-medium text-primary/60 hover:text-primary transition-colors relative group"
             >
               {link.label}
@@ -116,7 +116,7 @@ export default function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  onClick={(e) => handleNavClick(e, link.section)}
+                  onClick={(e) => handleNavClick(e, link)}
                   className="block py-3 text-base font-medium text-primary/60 hover:text-primary transition-colors"
                 >
                   {link.label}
