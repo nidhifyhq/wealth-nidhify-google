@@ -94,7 +94,7 @@ export default function Hero() {
               className="flex flex-wrap gap-4 pt-2"
             >
               <a
-                href="https://wealth.nidhify.com"
+                href="https://app.nidhify.com"
                 className="inline-flex items-center justify-center rounded-lg bg-accent hover:bg-accent/90 text-white shadow-lg shadow-accent/25 border-0 px-7 py-5 text-base h-auto font-medium transition-colors"
               >
                 Login / Sign Up

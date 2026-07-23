@@ -86,7 +86,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://wealth.nidhify.com"
+            href="https://app.nidhify.com"
             className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-4 py-2 text-sm font-medium transition-colors"
           >
             Login / Sign Up
@@ -124,7 +124,7 @@ export default function Header() {
               ))}
               <div className="flex flex-col gap-3 pt-6 mt-2 border-t border-gray-100">
                 <a
-                  href="https://wealth.nidhify.com"
+                  href="https://app.nidhify.com"
                   className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-4 py-2.5 text-sm font-medium w-full transition-colors"
                 >
                   Login / Sign Up

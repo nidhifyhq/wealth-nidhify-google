@@ -384,10 +384,10 @@ export default async function TermsPage({ searchParams }) {
                   <br />
                   Email:{" "}
                   <a
-                    href="mailto:nidhifyhq@gmail.com"
+                    href="mailto:support@nidhify.com"
                     className="text-primary hover:underline font-semibold"
                   >
-                    nidhifyhq@gmail.com
+                    support@nidhify.com
                   </a>
                 </p>
               </div>
@@ -678,8 +678,8 @@ export default async function TermsPage({ searchParams }) {
 //                   If you have any questions about these Terms, please contact us at:
 //                   <br />
 //                   Email:{" "}
-//                   <a href="mailto:nidhifyhq@gmail.com" className="text-primary hover:underline font-semibold">
-//                     nidhifyhq@gmail.com
+//                   <a href="mailto:support@nidhify.com" className="text-primary hover:underline font-semibold">
+//                     support@nidhify.com
 //                   </a>
 //                 </p>
 //               </div>

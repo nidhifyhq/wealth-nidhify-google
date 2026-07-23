@@ -339,10 +339,10 @@ export default function PrivacyPolicyPage() {
                       account settings section of the application. You may also
                       request account deletion by contacting us at{" "}
                       <a
-                        href="mailto:nidhifyhq@gmail.com"
+                        href="mailto:support@nidhify.com"
                         className="text-primary hover:underline font-semibold"
                       >
-                        nidhifyhq@gmail.com
+                        support@nidhify.com
                       </a>
                       . Upon account deletion, your account information,
                       manually entered tracking data, portfolio records, and
@@ -407,10 +407,10 @@ export default function PrivacyPolicyPage() {
                   <br />
                   Email:{" "}
                   <a
-                    href="mailto:nidhifyhq@gmail.com"
+                    href="mailto:support@nidhify.com"
                     className="text-primary hover:underline font-semibold"
                   >
-                    nidhifyhq@gmail.com
+                    support@nidhify.com
                   </a>
                 </p>
               </div>

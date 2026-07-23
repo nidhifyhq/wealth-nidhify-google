@@ -31,7 +31,7 @@ export default function ContactPage() {
             </Link>
           </nav>
           <Link
-            href="/"
+            href="https://app.nidhify.com/"
             className="inline-flex items-center justify-center rounded-lg bg-secondary text-white px-4 py-2 text-sm font-medium hover:bg-secondary/90 transition-colors"
           >
             Get Started
@@ -65,10 +65,10 @@ export default function ContactPage() {
                   Email:{" "}
                 </span>
                 <a
-                  href="mailto:nidhifyhq@gmail.com"
+                  href="mailto:support@nidhify.com"
                   className="text-sm font-semibold text-secondary hover:underline"
                 >
-                  nidhifyhq@gmail.com
+                  support@nidhify.com
                 </a>
               </div>
               <div className="flex items-start gap-2 text-sm text-gray-500">

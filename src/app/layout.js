@@ -14,15 +14,22 @@ export const metadata = {
     template: '%s | Nidhify',
   },
   description:
-    'Manage investments, monitor your net worth, and stay in control of your financial future with one powerful dashboard. Nidhify brings together mutual funds, stocks, deposits, insurance policies, and financial goals into a single secure platform.',
+    'Nidhify is your financial super-app. Track mutual funds, stocks, FDs, digital gold, EPFO, insurance, budgets, and personal ledgers in one secure dashboard',
   keywords: [
     'wealth management',
     'investment tracker',
     'personal finance',
+    'personal finance India',
     'net worth tracker',
     'SIP management',
     'mutual funds',
     'Indian investors',
+    'gold tracker',
+    'Ledger Tracker',
+    'budget planning app',
+    'mutual fund app',
+    'SIP Calculator',
+    'EPFO balance tracker',
   ],
   authors: [{ name: 'Nidhify' }],
   creator: 'Nidhify',
@@ -39,13 +46,13 @@ export const metadata = {
     siteName: 'Nidhify',
     title: 'Nidhify — Track Your Entire Wealth in One Place',
     description:
-      'Manage investments, monitor your net worth, and stay in control of your financial future with one powerful dashboard.',
+      'Track mutual funds, stocks, gold, EPFO, insurance, budgets, personal ledgers, and fixed deposits in one secure dashboard',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Nidhify - Wealth Management Platform',
+        alt: 'Nidhify - Wealth & Financial Super-App',
       },
     ],
   },
@@ -53,7 +60,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Nidhify — Track Your Entire Wealth in One Place',
     description:
-      'Manage investments, monitor your net worth, and stay in control of your financial future with one powerful dashboard.',
+      'Track mutual funds, stocks, gold, EPFO, insurance, budgets, personal ledgers, and fixed deposits in one secure dashboard',
     images: ['/og-image.png'],
     creator: '@nidhify',
   },

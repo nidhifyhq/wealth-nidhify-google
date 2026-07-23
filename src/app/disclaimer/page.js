@@ -146,8 +146,8 @@ export default function DisclaimerPage() {
                   If you have queries regarding the specific mathematical models, architectural exclusions, or operational disclaimers outlined on this page, please contact us directly via email at:
                   <br />
                   Email:{" "}
-                  <a href="mailto:nidhifyhq@gmail.com" className="text-primary hover:underline font-semibold">
-                    nidhifyhq@gmail.com
+                  <a href="mailto:support@nidhify.com" className="text-primary hover:underline font-semibold">
+                    support@nidhify.com
                   </a>
                 </p>
               </div>

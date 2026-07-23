@@ -20,8 +20,8 @@ const legalLinks = [
 ];
 
 const productLinks = [
-  { label: "Login", href: "https://wealth.nidhify.com/" },
-  { label: "Sign Up", href: "https://wealth.nidhify.com/" },
+  { label: "Login", href: "https://app.nidhify.com/" },
+  { label: "Sign Up", href: "https://app.nidhify.com/" },
 ];
 
 const footerLinks = [

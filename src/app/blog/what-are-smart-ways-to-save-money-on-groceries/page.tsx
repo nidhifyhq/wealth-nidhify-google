@@ -421,7 +421,7 @@ export default function Page() {
           </p>
           <div className="mt-6 p-5 bg-secondary/5 border border-secondary/20 rounded-xl text-center">
             <p className="text-base font-semibold text-primary">Get started today:</p>
-            <a href="https://wealth.nidhify.com" className="text-accent hover:underline font-medium">https://wealth.nidhify.com</a>
+            <a href="https://app.nidhify.com" className="text-accent hover:underline font-medium">https://app.nidhify.com</a>
           </div>
         </section>
 

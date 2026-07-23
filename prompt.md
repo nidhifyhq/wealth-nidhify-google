@@ -143,7 +143,7 @@ With Nidhify, you can organize information related to:
 Whether you're just getting started or already have investments across different platforms, having a centralized dashboard can simplify financial organization.
 
 👉 **Create your free Nidhify account:**  
-**https://wealth.nidhify.com**
+**https://app.nidhify.com**
 
 ---
 
@@ -176,7 +176,7 @@ Whether you have recently started investing or already own multiple financial pr
 If you're looking for a simple way to organize your investments, you can create a free account on **Nidhify** and manage your financial assets from a single dashboard.
 
 👉 **Get started today:**  
-**https://wealth.nidhify.com**
+**https://app.nidhify.com**
 
 ---
 
