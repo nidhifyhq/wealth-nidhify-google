@@ -18,6 +18,7 @@ const legalLinks = [
   { label: "Terms & Conditions", href: "/terms" },
   { label: "Disclaimer", href: "/disclaimer" },
   { label: "Delete Account", href: "/delete-account" },
+  { label: "Delete Data", href: "/delete-data" },
 ];
 
 const productLinks = [

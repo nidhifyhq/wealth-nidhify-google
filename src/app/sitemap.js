@@ -18,6 +18,7 @@ export default function sitemap() {
     '/terms',
     '/disclaimer',
     '/delete-account',
+    '/delete-data',
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
