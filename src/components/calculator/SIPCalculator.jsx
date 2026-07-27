@@ -5,13 +5,11 @@ import { cn } from "@/lib/utils";
 import { TrendingUp, IndianRupee, Calendar, BarChart3, PieChart } from "lucide-react";
 
 function formatCurrency(value) {
-  if (value >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
-  if (value >= 100000) return "₹" + (value / 100000).toFixed(2) + " L";
   return "₹" + Number(value).toLocaleString("en-IN");
 }
 
 function calculateSIP(monthly, rate, years) {
-  const r = rate / 12 / 100;
+  const r = Math.pow(1 + rate / 100, 1 / 12) - 1;
   const n = Math.round(years * 12);
   const invested = monthly * n;
   const fv = monthly * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
@@ -54,7 +52,7 @@ function DonutChart({ invested, estimatedReturns }) {
       <text x={cx} y={cy - 5} textAnchor="middle" className="font-semibold fill-primary" style={{ fontSize: "16px" }}>
         {formatCurrency(invested + estimatedReturns)}
       </text>
-      <text x={cx} y={cy + 14} textAnchor="middle" className="fill-primary/50" style={{ fontSize: "10px" }}>
+      <text x={cx} y={cy + 14} textAnchor="middle" className="fill-primary/50" style={{ fontSize: "8px" }}>
         Total Value
       </text>
     </svg>
