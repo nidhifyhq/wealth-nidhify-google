@@ -9,7 +9,7 @@ const blogPosts = [
 ];
 
 export default function sitemap() {
-  const staticRoutes = [
+const staticRoutes = [
     '',
     '/blog',
     '/about',
@@ -19,11 +19,12 @@ export default function sitemap() {
     '/disclaimer',
     '/delete-account',
     '/delete-data',
+    '/calculator/sip',
   ].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1.0 : 0.8,
+    changeFrequency: route === '' ? 'weekly' : route === '/calculator/sip' ? 'monthly' : 'monthly',
+    priority: route === '' ? 1.0 : route === '/calculator/sip' ? 0.9 : 0.8,
   }));
 
   const blogRoutes = blogPosts.map((post) => ({

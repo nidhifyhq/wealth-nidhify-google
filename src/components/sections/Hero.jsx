@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -129,18 +130,46 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Dashboard Mockup */}
+          {/* Right Column - App Screenshot */}
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             className="relative"
           >
-            {/* Glow behind mockup */}
+            {/* Glow behind screenshot */}
             <div className="absolute -inset-4 bg-gradient-to-br from-accent/10 via-transparent to-emerald-500/10 rounded-3xl blur-2xl" />
 
+            {/* Center light gradient behind image */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div className="w-[500px] h-[500px] bg-gradient-to-r from-accent/25 via-emerald-500/15 to-transparent rounded-full blur-3xl opacity-80" />
+            </div>
+
+            {/* App Screenshot */}
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+              className="relative mx-auto w-full max-w-[220px] md:max-w-[260px]"
+            >
+              <div className="absolute -inset-3 bg-gradient-to-br from-accent/20 via-emerald-500/10 to-transparent rounded-3xl blur-3xl opacity-60" />
+
+<Image
+                src="/NidhifyAppUI.png"
+                alt="Nidhify App Dashboard"
+                width={600}
+                height={400}
+                className="w-full h-auto drop-shadow-2xl"
+                priority
+              />
+            </motion.div>
+
+            {/*
+            ==========================================
+            OLD DASHBOARD MOCKUP -- COMMENTED OUT
+            Uncomment the block below to restore
+            ==========================================
             <div className="relative rounded-2xl shadow-2xl border border-white/[0.08] bg-gradient-to-br from-[#0B1120] to-[#162044] p-4 md:p-5 overflow-hidden">
-              {/* Subtle grid pattern overlay */}
+              Subtle grid pattern overlay
               <div
                 className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{
@@ -150,7 +179,7 @@ export default function Hero() {
                 }}
               />
 
-              {/* Status Bar */}
+              Status Bar
               <div className="relative flex items-center justify-between mb-5">
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-accent shadow-[0_0_6px_rgba(37,99,235,0.6)]" />
@@ -165,9 +194,9 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Dashboard Grid */}
+              Dashboard Grid
               <div className="relative grid grid-cols-3 gap-3">
-                {/* Net Worth Card */}
+                Net Worth Card
                 <div className="col-span-3 md:col-span-2 bg-white/[0.05] backdrop-blur rounded-xl p-4 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-xs font-medium text-white/40 tracking-wide uppercase">
@@ -176,7 +205,7 @@ export default function Hero() {
                     <Wallet className="w-4 h-4 text-white/30" />
                   </div>
                   <div className="flex items-center gap-4">
-                    {/* Progress Ring */}
+                    Progress Ring
                     <div className="relative w-[68px] h-[68px] shrink-0">
                       <svg
                         className="w-full h-full -rotate-90"
@@ -222,13 +251,13 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Asset Allocation Card */}
+                Asset Allocation Card
                 <div className="col-span-3 md:col-span-1 bg-white/[0.05] backdrop-blur rounded-xl p-4 border border-white/[0.06]">
                   <span className="text-xs font-medium text-white/40 tracking-wide uppercase block mb-3">
                     Allocation
                   </span>
                   <div className="relative w-full aspect-square max-w-[110px] mx-auto">
-                    {/* Donut segments */}
+                    Donut segments
                     <div
                       className="w-full h-full rounded-full"
                       style={{
@@ -265,7 +294,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Portfolio Growth Card */}
+                Portfolio Growth Card
                 <div className="col-span-3 bg-white/[0.05] backdrop-blur rounded-xl p-4 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-medium text-white/40 tracking-wide uppercase">
@@ -298,7 +327,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* SIP Tracker Card */}
+                SIP Tracker Card
                 <div className="col-span-1 bg-white/[0.05] backdrop-blur rounded-xl p-3 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[10px] font-medium text-white/40 tracking-wide uppercase">
@@ -318,7 +347,7 @@ export default function Hero() {
                   </p>
                 </div>
 
-                {/* Goal Progress Card */}
+                Goal Progress Card
                 <div className="col-span-1 bg-white/[0.05] backdrop-blur rounded-xl p-3 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[10px] font-medium text-white/40 tracking-wide uppercase">
@@ -362,7 +391,7 @@ export default function Hero() {
                   </p>
                 </div>
 
-                {/* Insurance Summary Card */}
+                Insurance Summary Card
                 <div className="col-span-1 bg-white/[0.05] backdrop-blur rounded-xl p-3 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[10px] font-medium text-white/40 tracking-wide uppercase">
@@ -392,6 +421,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+            */}
           </motion.div>
         </div>
       </div>

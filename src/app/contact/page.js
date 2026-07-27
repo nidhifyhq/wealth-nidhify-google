@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Mail, ShieldCheck, HelpCircle, Clock, AlertTriangle } from "lucide-react";
 
 export const metadata = {
@@ -15,9 +16,9 @@ export default function ContactPage() {
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
         <div className="container flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 text-xl font-bold gradient-text">
+          <Link href="/" className="flex items-center gap-2 shrink-0">
             <ArrowLeft size={20} />
-            Nidhify
+            <Image src="/transBlackLogo.png" alt="Nidhify" width={80} height={22} className="h-6 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">

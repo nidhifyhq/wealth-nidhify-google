@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: 'Blog',
@@ -18,8 +19,8 @@ export default function BlogLayout({
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
         <div className="container flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold gradient-text">
-            Nidhify
+          <Link href="/" className="flex items-center shrink-0">
+            <Image src="/transBlackLogo.png" alt="Nidhify" width={96} height={26} className="h-7 w-auto" />
           </Link>
           <nav className="hidden md:flex items-center gap-6">
             <Link

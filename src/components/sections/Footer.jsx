@@ -11,6 +11,7 @@ const companyLinks = [
 
 const resourceLinks = [
   { label: "Blog", href: "/blog" },
+  { label: "SIP Calculator", href: "/calculator/sip" },
 ];
 
 const legalLinks = [

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
@@ -21,10 +22,10 @@ export default async function DeleteAccountPage({ searchParams }) {
           <div className="container flex items-center justify-between h-16">
             <Link
               href="/"
-              className="flex items-center gap-2 text-xl font-bold gradient-text"
+              className="flex items-center gap-2 shrink-0"
             >
               <ArrowLeft size={20} />
-              Nidhify
+              <Image src="/transBlackLogo.png" alt="Nidhify" width={80} height={22} className="h-6 w-auto" />
             </Link>
             <nav className="hidden md:flex items-center gap-6">
               <Link
