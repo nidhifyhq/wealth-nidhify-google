@@ -6,6 +6,8 @@ const blogPosts = [
   { slug: 'mutual-funds-vs-fixed-deposits', lastModified: '2026-06-29' },
   { slug: 'why-track-all-investments', lastModified: '2026-07-08' },
   { slug: 'what-are-smart-ways-to-save-money-on-groceries', lastModified: '2026-07-19' },
+  { slug: 'sip-to-crorepati-india', lastModified: '2026-08-11' },
+  { slug: 'best-ways-to-invest-in-gold-india', lastModified: '2026-08-11' },
 ];
 
 export default function sitemap() {

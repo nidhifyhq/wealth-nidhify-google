@@ -11,7 +11,7 @@ export const metadata = {
     url: 'https://nidhify.com/blog/mutual-funds-vs-fixed-deposits',
     type: 'article',
     publishedTime: '2026-06-29T00:00:00.000Z',
-    authors: ['Nidhify Wealth Team'],
+    authors: ['Nidhify Team'],
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Mutual Funds vs Fixed Deposits' }],
   },
   twitter: {

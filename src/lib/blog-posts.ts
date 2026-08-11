@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
       "Learn what mutual funds are, how they work, types of funds, benefits, risks, and key terms every investor should know.",
     category: "Mutual Funds",
     date: "June 29, 2026",
-    author: "Nidhify Wealth Team",
+    author: "Nidhify Team",
     readingTime: "8 min read",
   },
   {
@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
       "Understand what fixed deposits are, how they work, different types, features, benefits, and key differences from savings accounts.",
     category: "Fixed Deposits",
     date: "June 29, 2026",
-    author: "Nidhify Wealth Team",
+    author: "Nidhify Team",
     readingTime: "7 min read",
   },
   {
@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
       "Compare mutual funds and fixed deposits across risk, liquidity, returns, and taxation in this educational guide.",
     category: "Comparison",
     date: "June 29, 2026",
-    author: "Nidhify Wealth Team",
+    author: "Nidhify Team",
     readingTime: "6 min read",
   },
   {
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       "Track mutual funds, fixed deposits, digital gold, insurance, and more in one place. Learn why an investment tracker can simplify your finances and help you stay organized.",
     category: "Investment Tracking",
     date: "July 8, 2026",
-    author: "Nidhify Wealth Team",
+    author: "Nidhify Team",
     readingTime: "7 min read",
   },
   {
@@ -56,7 +56,27 @@ export const blogPosts: BlogPost[] = [
       "Discover 21 smart ways to save money on groceries with practical budgeting tips. Learn how to reduce grocery expenses, avoid overspending, and stick to your monthly food budget.",
     category: "Budgeting",
     date: "July 19, 2026",
-    author: "Nidhify Wealth Team",
+    author: "Nidhify Team",
     readingTime: "10 min read",
+  },
+  {
+    slug: "sip-to-crorepati-india",
+    title: "How Much SIP to Become a Crorepati in India? (1 Crore SIP Table for 2026)",
+    description:
+      "Find out how much monthly SIP you need to reach Rs 1 crore. See illustrative SIP return tables, step-up SIP math, and realistic assumptions for Indian investors.",
+    category: "Mutual Funds",
+    date: "August 11, 2026",
+    author: "Nidhify Team",
+    readingTime: "8 min read",
+  },
+  {
+    slug: "best-ways-to-invest-in-gold-india",
+    title: "Best Way to Invest in Gold in India 2026: All 6 Options Compared",
+    description:
+      "Compare physical gold, digital gold, gold ETFs, Sovereign Gold Bonds, gold mutual funds, and gold SIPs in India. Understand costs, taxes, liquidity, and how to track your gold investments.",
+    category: "Comparison",
+    date: "August 11, 2026",
+    author: "Nidhify Team",
+    readingTime: "9 min read",
   },
 ];

@@ -22,7 +22,7 @@ export default function AuthorCard({ author }: AuthorCardProps) {
           {getInitials(author) || <User className="w-6 h-6" />}
         </div>
         <h4 className="text-base font-semibold text-primary">{author}</h4>
-        <p className="text-sm text-primary/50 mt-0.5">Nidhify Wealth Team</p>
+        <p className="text-sm text-primary/50 mt-0.5">Nidhify Team</p>
       </CardContent>
     </Card>
   );

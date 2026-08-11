@@ -13,7 +13,7 @@ export const metadata = {
     url: 'https://nidhify.com/blog/mutual-funds-beginners-guide',
     type: 'article',
     publishedTime: '2026-06-29T00:00:00.000Z',
-    authors: ['Nidhify Wealth Team'],
+    authors: ['Nidhify Team'],
     images: [
       {
         url: '/og-image.png',

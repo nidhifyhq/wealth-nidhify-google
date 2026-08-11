@@ -13,7 +13,7 @@ export const metadata = {
     url: "https://nidhify.com/blog/what-are-smart-ways-to-save-money-on-groceries",
     type: "article",
     publishedTime: "2026-07-19T00:00:00.000Z",
-    authors: ["Nidhify Wealth Team"],
+    authors: ["Nidhify Team"],
     images: [
       {
         url: "/og-image.png",

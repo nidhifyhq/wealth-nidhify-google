@@ -44,7 +44,7 @@ async function main() {
     description = cli.desc || "";
     category = cli.cat || "";
     readingTime = cli.time || "5 min read";
-    author = cli.author || "Nidhify Wealth Team";
+    author = cli.author || "Nidhify Team";
     keywordsRaw = cli.kw || "";
     console.log("\n=== New Blog Post Generator (CLI mode) ===\n");
   } else {
@@ -60,7 +60,7 @@ async function main() {
     description = await ask("Meta description (150-160 chars): ");
     category = await ask("Category (e.g. Mutual Funds): ");
     readingTime = await ask("Reading time (e.g. 5 min read): ");
-    author = (await ask("Author [Nidhify Wealth Team]: ")).trim() || "Nidhify Wealth Team";
+    author = (await ask("Author [Nidhify Team]: ")).trim() || "Nidhify Team";
     keywordsRaw = await ask("Keywords (comma-separated): ");
     rl.close();
   }

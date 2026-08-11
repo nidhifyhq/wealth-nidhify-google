@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MessageCircle, Globe, Link } from "lucide-react";
 
 interface ShareButtonsProps {
@@ -10,9 +10,15 @@ interface ShareButtonsProps {
 
 export default function ShareButtons({ title, url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
-  const shareUrl = url || (typeof window !== "undefined" ? window.location.href : "");
+  const [shareUrl, setShareUrl] = useState(url || "");
   const encodedUrl = encodeURIComponent(shareUrl);
   const encodedTitle = encodeURIComponent(title);
+
+  useEffect(() => {
+    if (!url) {
+      setShareUrl(window.location.href);
+    }
+  }, [url]);
 
   const shareLinks = [
     {

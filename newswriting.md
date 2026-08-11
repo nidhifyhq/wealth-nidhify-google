@@ -64,7 +64,7 @@ Add your post to the `blogPosts` array (before the closing `];`):
     "A compelling 150-160 character meta description that includes your target keyword naturally.",
   category: "Mutual Funds",
   date: "July 8, 2026",
-  author: "Nidhify Wealth Team",
+  author: "Nidhify Team",
   readingTime: "6 min read",
 },
 ```
