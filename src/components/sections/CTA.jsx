@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, UserPlus } from "lucide-react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
+const PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.nidhify.app";
 
 export default function CTA() {
   return (
@@ -33,10 +35,16 @@ export default function CTA() {
             Join thousands of investors who trust Nidhify to manage and monitor their wealth.
           </p>
           <div className="mt-10 flex flex-wrap gap-4 justify-center">
-            <Button className="bg-secondary hover:bg-secondary/90 text-white shadow-lg shadow-secondary/25 border-0 px-8 py-6 text-base h-auto">
-              Download App
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-secondary hover:bg-secondary/90 text-white shadow-lg shadow-secondary/25 border-0 px-8 py-6 text-base h-auto">
+                Download App
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
             <Button
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-6 text-base h-auto"

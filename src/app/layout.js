@@ -99,6 +99,9 @@ export default function RootLayout({ children }) {
               url: 'https://nidhify.com',
               description:
                 'Track your entire wealth in one place. Mutual funds, stocks, FDs, insurance, and goals.',
+              sameAs: [
+                'https://play.google.com/store/apps/details?id=com.nidhify.app',
+              ],
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {

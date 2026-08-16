@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.nidhify.app";
+const APP_URL = "https://app.nidhify.com/";
 
 function detectIOS(userAgent) {
   if (!userAgent) return false;
@@ -12,8 +13,14 @@ function detectIOS(userAgent) {
   return false;
 }
 
+function detectAndroid(userAgent) {
+  if (!userAgent) return false;
+  return /Android/i.test(userAgent);
+}
+
 export function useDevice() {
   const [isIOS, setIsIOS] = useState(false);
+  const [isAndroid, setIsAndroid] = useState(false);
 
   useEffect(() => {
     const ua =
@@ -21,7 +28,8 @@ export function useDevice() {
       navigator.userAgent ||
       "";
     setIsIOS(detectIOS(ua));
+    setIsAndroid(detectAndroid(ua));
   }, []);
 
-  return { isIOS, PLAY_STORE_URL };
+  return { isIOS, isAndroid, PLAY_STORE_URL, APP_URL };
 }

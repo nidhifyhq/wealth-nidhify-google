@@ -25,6 +25,10 @@ const legalLinks = [
 const productLinks = [
   { label: "Login", href: "https://app.nidhify.com/" },
   { label: "Sign Up", href: "https://app.nidhify.com/" },
+  {
+    label: "Download App",
+    href: "https://play.google.com/store/apps/details?id=com.nidhify.app",
+  },
 ];
 
 const footerLinks = [

@@ -22,8 +22,8 @@ const staticRoutes = [
     '/delete-account',
     '/delete-data',
     '/calculator/sip',
-  ].map((route) => ({
-    url: `${BASE_URL}${route}`,
+    '/search',
+  ].map((route) => ({    url: `${BASE_URL}${route}`,
     lastModified: new Date(),
     changeFrequency: route === '' ? 'weekly' : route === '/calculator/sip' ? 'monthly' : 'monthly',
     priority: route === '' ? 1.0 : route === '/calculator/sip' ? 0.9 : 0.8,
