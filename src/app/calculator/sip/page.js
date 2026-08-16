@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 import SIPCalculator from "@/components/calculator/SIPCalculator";
 import PopularCalculators from "@/components/calculator/PopularCalculators";
+import DeviceCTA from "@/components/sections/DeviceCTA";
 
 export const metadata = {
   title: "SIP Calculator - Free Systematic Investment Plan Calculator",
@@ -198,12 +199,7 @@ export default function SIPCalculatorPage() {
               About
             </Link>
           </nav>
-          <Link
-            href="https://app.nidhify.com/"
-            className="inline-flex items-center justify-center rounded-lg bg-secondary text-white px-4 py-2 text-sm font-medium hover:bg-secondary/90 transition-colors"
-          >
-            Get Started
-          </Link>
+          <DeviceCTA />
         </div>
       </header>
 

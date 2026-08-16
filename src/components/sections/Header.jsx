@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { useDevice } from "@/lib/use-device";
 
 const navLinks = [
   { label: "Features", href: "/#features", section: "features" },
@@ -21,6 +21,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const { isIOS, PLAY_STORE_URL } = useDevice();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -85,12 +86,30 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a
-            href="https://app.nidhify.com"
-            className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-4 py-2 text-sm font-medium transition-colors"
-          >
-            Login / Sign Up
-          </a>
+          {isIOS ? (
+            <a
+              href="https://app.nidhify.com"
+              className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-4 py-2 text-sm font-medium transition-colors"
+            >
+              Login / Sign Up
+            </a>
+          ) : (
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Nidhify on Google Play"
+              className="inline-flex items-center justify-center transition-opacity hover:opacity-90"
+            >
+              <Image
+                src="/playstore-img.png"
+                alt="Get it on Google Play"
+                width={880}
+                height={572}
+                className="w-32 h-auto"
+              />
+            </a>
+          )}
         </div>
 
         <button
@@ -123,12 +142,30 @@ export default function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-3 pt-6 mt-2 border-t border-gray-100">
-                <a
-                  href="https://app.nidhify.com"
-                  className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-4 py-2.5 text-sm font-medium w-full transition-colors"
-                >
-                  Login / Sign Up
-                </a>
+                {isIOS ? (
+                  <a
+                    href="https://app.nidhify.com"
+                    className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-4 py-2.5 text-sm font-medium w-full transition-colors"
+                  >
+                    Login / Sign Up
+                  </a>
+                ) : (
+                  <a
+                    href={PLAY_STORE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download Nidhify on Google Play"
+                    className="inline-flex items-center justify-center w-full transition-opacity hover:opacity-90"
+                  >
+                    <Image
+                      src="/playstore-img.png"
+                      alt="Get it on Google Play"
+                      width={880}
+                      height={572}
+                      className="w-44 h-auto"
+                    />
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>

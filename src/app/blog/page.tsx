@@ -14,7 +14,11 @@ export default function BlogPage() {
     ...new Set(blogPosts.map((p) => p.category)),
   ];
 
-  const filtered = blogPosts.filter((post) => {
+  const sortedPosts = [...blogPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  const filtered = sortedPosts.filter((post) => {
     const matchSearch =
       post.title.toLowerCase().includes(search.toLowerCase()) ||
       post.description.toLowerCase().includes(search.toLowerCase());
@@ -23,7 +27,7 @@ export default function BlogPage() {
     return matchSearch && matchCategory;
   });
 
-  const featured = blogPosts[0];
+  const featured = sortedPosts[0];
 
   return (
     <div className="min-h-screen">

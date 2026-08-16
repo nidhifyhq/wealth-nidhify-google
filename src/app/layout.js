@@ -30,6 +30,9 @@ export const metadata = {
     'mutual fund app',
     'SIP Calculator',
     'EPFO balance tracker',
+    'Nidhify app',
+    'download Nidhify app',
+    'Nidhify Android app',
   ],
   authors: [{ name: 'Nidhify' }],
   creator: 'Nidhify',
@@ -116,7 +119,9 @@ export default function RootLayout({ children }) {
               name: 'Nidhify',
               url: 'https://nidhify.com',
               logo: 'https://nidhify.com/logo192px.png',
-              sameAs: [],
+              sameAs: [
+                'https://play.google.com/store/apps/details?id=com.nidhify.app',
+              ],
             }),
           }}
         />
@@ -131,6 +136,7 @@ export default function RootLayout({ children }) {
               operatingSystem: 'Android, iOS, Web',
               description:
                 'Smart personal wealth management platform that helps users track all their investments in one place.',
+              url: 'https://play.google.com/store/apps/details?id=com.nidhify.app',
               offers: {
                 '@type': 'Offer',
                 price: '0',

@@ -13,11 +13,16 @@ export default function NewsletterCTA() {
         their wealth.
       </p>
       <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
-        <Button className="bg-accent hover:bg-accent/90 text-white px-6 h-11 text-base">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.nidhify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-base font-medium transition-colors bg-accent hover:bg-accent/90 text-white px-6 h-11"
+        >
           <Download className="w-4 h-4" />
           Download the App
-        </Button>
-        <Link href="/">
+        </a>
+        {/* <Link href="/">
           <Button
             variant="outline"
             className="border-white/30 text-white hover:bg-white/10 hover:text-white px-6 h-11 text-base"
@@ -25,7 +30,7 @@ export default function NewsletterCTA() {
             Create Free Account
             <ArrowRight className="w-4 h-4" />
           </Button>
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

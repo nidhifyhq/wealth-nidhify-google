@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import { useDevice } from "@/lib/use-device";
 import {
   ArrowRight,
   Sparkles,
@@ -34,6 +35,8 @@ const itemVariants = {
 };
 
 export default function Hero() {
+  const { isIOS, PLAY_STORE_URL } = useDevice();
+
   return (
     <section
       id="hero"
@@ -94,20 +97,40 @@ export default function Hero() {
               variants={itemVariants}
               className="flex flex-wrap gap-4 pt-2"
             >
-              <a
-                href="https://app.nidhify.com"
-                className="inline-flex items-center justify-center rounded-lg bg-accent hover:bg-accent/90 text-white shadow-lg shadow-accent/25 border-0 px-7 py-5 text-base h-auto font-medium transition-colors"
-              >
-                Login / Sign Up
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-              <a
-                href="/#features"
-                className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-7 py-5 text-base h-auto font-medium transition-colors"
-              >
-                <Play className="w-4 h-4 mr-2" />
-                Explore Features
-              </a>
+              {isIOS ? (
+                <a
+                  href="https://app.nidhify.com"
+                  className="inline-flex items-center justify-center rounded-lg bg-accent hover:bg-accent/90 text-white shadow-lg shadow-accent/25 border-0 px-7 py-5 text-base h-auto font-medium transition-colors"
+                >
+                  Login / Sign Up
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              ) : (
+                <a
+                  href={PLAY_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Download Nidhify on Google Play"
+                  className="inline-flex items-center justify-center transition-opacity hover:opacity-90"
+                >
+                  <Image
+                    src="/playstore-img.png"
+                    alt="Get it on Google Play"
+                    width={880}
+                    height={572}
+                    className="w-48 md:w-56 h-auto"
+                  />
+                </a>
+              )}
+              {/* {isIOS && (
+                <a
+                  href="/#features"
+                  className="inline-flex items-center justify-center rounded-lg border border-primary/20 text-primary/70 hover:text-primary hover:border-primary/40 px-7 py-5 text-base h-auto font-medium transition-colors"
+                >
+                  <Play className="w-4 h-4 mr-2" />
+                  Explore Features
+                </a>
+              )} */}
             </motion.div>
 
             <motion.div

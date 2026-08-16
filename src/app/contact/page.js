@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, Mail, ShieldCheck, HelpCircle, Clock, AlertTriangle } from "lucide-react";
+import DeviceCTA from "@/components/sections/DeviceCTA";
 
 export const metadata = {
   title: "Contact Us",
@@ -31,12 +32,7 @@ export default function ContactPage() {
               Blog
             </Link>
           </nav>
-          <Link
-            href="https://app.nidhify.com/"
-            className="inline-flex items-center justify-center rounded-lg bg-secondary text-white px-4 py-2 text-sm font-medium hover:bg-secondary/90 transition-colors"
-          >
-            Get Started
-          </Link>
+          <DeviceCTA />
         </div>
       </header>
 
